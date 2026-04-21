@@ -1,0 +1,15 @@
+
+> landing-page-candles@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+  ▲ Next.js 14.2.35
+  - Local:        http://127.0.0.1:3000
+  - Network:      http://127.0.0.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 1950ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.3s (569 modules)
+ GET / 200 in 3602ms
+ ✓ Compiled /icon.svg in 291ms (328 modules)
+ GET /icon.svg?4ded186401519840 200 in 374ms

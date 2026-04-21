@@ -12,7 +12,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      <main className="flex-1">
+      <main className="relative flex-1">
         <HeroSection />
         <UniquenessSection />
         <ProgramSection />

@@ -16,13 +16,26 @@ export function SectionHeading({
   align = "left"
 }: SectionHeadingProps) {
   return (
-    <header className={cn("space-y-3", align === "center" && "text-center")}>
-      {eyebrow ? <p className="text-sm font-medium uppercase tracking-[0.16em] text-muted-foreground">{eyebrow}</p> : null}
-      <div className="space-y-2">
-        <h2 id={id} className="text-3xl font-semibold tracking-tight">
+    <header className={cn("space-y-5", align === "center" && "mx-auto max-w-3xl text-center")}>
+      {eyebrow ? (
+        <p className="mystic-badge">
+          {eyebrow}
+        </p>
+      ) : null}
+      <div className="space-y-4">
+        <h2 id={id} className="font-display text-4xl font-semibold tracking-[-0.04em] text-[rgba(255,238,220,0.98)] sm:text-5xl lg:text-6xl">
           {title}
         </h2>
-        {description ? <p className="max-w-3xl text-base leading-7 text-muted-foreground">{description}</p> : null}
+        {description ? (
+          <p
+            className={cn(
+              "max-w-3xl text-base leading-8 text-[rgba(201,206,226,0.84)] sm:text-lg",
+              align === "center" && "mx-auto"
+            )}
+          >
+            {description}
+          </p>
+        ) : null}
       </div>
     </header>
   );

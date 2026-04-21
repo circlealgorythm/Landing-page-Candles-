@@ -12,7 +12,7 @@ export function SocialIconLink({ href, name }: SocialIconLinkProps) {
       target="_blank"
       rel="noreferrer"
       aria-label={name}
-      className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm"
+      className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03))] px-4 py-2.5 text-sm text-foreground backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200/20 hover:bg-[linear-gradient(180deg,rgba(122,177,241,0.12),rgba(255,255,255,0.04))]"
     >
       <SocialIcon name={name} />
       <span>{name}</span>

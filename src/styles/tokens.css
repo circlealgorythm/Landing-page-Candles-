@@ -1,8 +1,15 @@
 :root {
-  --background: 40 33% 98%;
-  --foreground: 24 16% 12%;
-  --border: 24 14% 85%;
-  --muted: 36 22% 94%;
-  --muted-foreground: 24 10% 38%;
-  --radius: 1rem;
+  --background: 230 40% 7%;
+  --foreground: 36 68% 96%;
+  --border: 22 35% 24%;
+  --muted: 236 27% 12%;
+  --muted-foreground: 218 30% 73%;
+  --radius: 1.75rem;
+  --font-display: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --surface-strong: 233 28% 11%;
+  --surface-soft: 235 22% 14%;
+  --ember: 22 98% 62%;
+  --ember-soft: 37 96% 71%;
+  --smoke-blue: 201 66% 67%;
+  --mist: 214 38% 84%;
 }
