@@ -5,9 +5,33 @@ import { Container, Reveal, SectionHeading } from "@/components/ui";
 export function ProgramSection() {
   return (
     <section id="program" aria-labelledby="program-title" className="relative border-b border-white/10 py-20 lg:py-32">
+      <div
+        aria-hidden
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(90deg, rgba(8,10,20,0.99) 0%, rgba(8,10,20,0.97) 18%, rgba(8,10,20,0.84) 34%, rgba(8,10,20,0.56) 52%, rgba(8,10,20,0.24) 70%, rgba(8,10,20,0.14) 100%), linear-gradient(180deg, rgba(7,9,18,0.34), rgba(7,9,18,0.12) 28%, rgba(7,9,18,0.36) 100%), url('/images/deep.png')",
+          backgroundPosition: "center, center, center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 100%, 100% 100%, cover",
+          maskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 90%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 90%, transparent 100%)"
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 72% 40%, rgba(255,149,72,0.18) 0%, rgba(255,149,72,0.08) 18%, rgba(255,149,72,0.02) 34%, transparent 54%), radial-gradient(circle at 88% 82%, rgba(255,161,89,0.14) 0%, rgba(255,161,89,0.05) 20%, transparent 42%), linear-gradient(90deg, rgba(8,10,20,0.08) 0%, rgba(8,10,20,0.18) 24%, rgba(8,10,20,0.46) 42%, rgba(8,10,20,0.78) 60%, rgba(8,10,20,0.96) 76%, rgba(8,10,20,1) 100%)"
+        }}
+      />
+      <div aria-hidden className="absolute right-[10%] top-[14%] hidden h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle,rgba(255,152,78,0.12)_0%,rgba(255,152,78,0.05)_30%,transparent_70%)] blur-[52px] md:block" />
       <div aria-hidden className="section-orbit left-[-5rem] top-16 h-40 w-40 opacity-25" />
       <Reveal>
-        <Container className="space-y-14">
+        <Container className="relative z-10 space-y-14">
           <SectionHeading
             id="program-title"
             eyebrow="Пошаговая программа"

@@ -136,14 +136,14 @@ export const testimonials = [
 export const socialLinks = [
   {
     name: "Telegram",
-    href: "https://t.me/"
+    href: "https://t.me/shaman_aisu"
   },
   {
     name: "VK",
-    href: "https://vk.com/"
+    href: "https://vk.com/shaman_aisu"
   },
   {
     name: "YouTube",
-    href: "https://www.youtube.com/"
+    href: "https://www.youtube.com/@shaman_aisu"
   }
 ] as const;

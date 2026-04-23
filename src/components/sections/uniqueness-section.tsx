@@ -5,9 +5,34 @@ import { Container, Reveal, SectionHeading } from "@/components/ui";
 export function UniquenessSection() {
   return (
     <section id="uniqueness" aria-labelledby="uniqueness-title" className="relative border-b border-white/10 py-20 lg:py-32">
+      <div
+        aria-hidden
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(90deg, rgba(8,10,20,0.98) 0%, rgba(8,10,20,0.96) 18%, rgba(8,10,20,0.84) 34%, rgba(8,10,20,0.56) 52%, rgba(8,10,20,0.24) 70%, rgba(8,10,20,0.14) 100%), linear-gradient(180deg, rgba(7,9,18,0.34), rgba(7,9,18,0.12) 28%, rgba(7,9,18,0.36) 100%), url('/images/2.png')",
+          backgroundPosition: "center, center, center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 100%, 100% 100%, cover",
+          maskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 90%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 90%, transparent 100%)"
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 66% 38%, rgba(255,149,72,0.22) 0%, rgba(255,149,72,0.11) 18%, rgba(255,149,72,0.03) 32%, transparent 52%), radial-gradient(circle at 82% 28%, rgba(255,161,89,0.12) 0%, rgba(255,161,89,0.04) 18%, transparent 38%), linear-gradient(90deg, rgba(8,10,20,0.1) 0%, rgba(8,10,20,0.18) 24%, rgba(8,10,20,0.46) 42%, rgba(8,10,20,0.78) 60%, rgba(8,10,20,0.96) 76%, rgba(8,10,20,1) 100%)"
+        }}
+      />
+      <div aria-hidden className="absolute right-[8%] top-[18%] hidden h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(255,152,78,0.14)_0%,rgba(255,152,78,0.06)_28%,transparent_68%)] blur-[48px] md:block" />
+      <div aria-hidden className="absolute bottom-[10%] right-[12%] hidden h-32 w-32 rounded-full bg-[radial-gradient(circle,rgba(255,166,92,0.22)_0%,rgba(255,166,92,0.08)_32%,transparent_72%)] blur-[26px] md:block" />
       <div aria-hidden className="section-dust opacity-35" />
       <Reveal>
-        <Container className="space-y-14">
+        <Container className="relative z-10 space-y-14">
           <SectionHeading
             id="uniqueness-title"
             eyebrow="Что внутри"

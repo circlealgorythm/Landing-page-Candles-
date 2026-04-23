@@ -23,7 +23,35 @@ export function HeroSection() {
       <div aria-hidden className="section-dust opacity-40" />
       <div aria-hidden className="section-orbit -left-16 top-12 h-40 w-40 opacity-35" />
       <div aria-hidden className="section-orbit right-[-3rem] top-28 h-56 w-56 opacity-25" />
-      <Container className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div
+        aria-hidden
+        className="absolute inset-0 hidden lg:block"
+        style={{
+          backgroundImage:
+            "linear-gradient(90deg, rgba(7,9,18,0.98) 0%, rgba(7,9,18,0.96) 18%, rgba(7,9,18,0.84) 34%, rgba(7,9,18,0.54) 52%, rgba(7,9,18,0.24) 70%, rgba(7,9,18,0.16) 100%), linear-gradient(180deg, rgba(6,8,18,0.5), rgba(6,8,18,0.16) 32%, rgba(6,8,18,0.38) 100%), url('/images/candles-study.png')",
+          backgroundPosition: "center, center, center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 100%, 100% 100%, cover",
+          maskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 88%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.94) 8%, rgba(0,0,0,1) 88%, transparent 100%)"
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 hidden lg:block"
+        style={{
+          background:
+            "radial-gradient(circle at 74% 40%, rgba(255,149,72,0.24) 0%, rgba(255,149,72,0.12) 16%, rgba(255,149,72,0.04) 30%, transparent 52%), radial-gradient(circle at 86% 72%, rgba(255,163,92,0.16) 0%, rgba(255,163,92,0.06) 20%, transparent 44%), linear-gradient(90deg, rgba(9,10,19,0.1) 0%, rgba(9,10,19,0.2) 24%, rgba(9,10,19,0.44) 42%, rgba(9,10,19,0.76) 58%, rgba(9,10,19,0.96) 76%, rgba(9,10,19,1) 100%)"
+        }}
+      />
+      <div aria-hidden className="absolute right-[10%] top-[12%] hidden h-[35rem] w-[35rem] rounded-full bg-[radial-gradient(circle,rgba(255,150,74,0.16)_0%,rgba(255,150,74,0.08)_26%,rgba(255,150,74,0.02)_52%,transparent_72%)] blur-[56px] lg:block" />
+      <div aria-hidden className="absolute bottom-[8%] right-[8%] hidden h-44 w-44 rounded-full bg-[radial-gradient(circle,rgba(255,162,88,0.3)_0%,rgba(255,162,88,0.12)_32%,transparent_70%)] blur-[28px] lg:block" />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-full bg-[linear-gradient(180deg,rgba(8,9,18,0.22),transparent_24%,transparent_78%,rgba(8,9,18,0.28))]" />
+      <div aria-hidden className="absolute inset-y-0 right-0 w-full bg-[linear-gradient(90deg,rgba(9,10,19,0.04)_0%,rgba(9,10,19,0.12)_34%,rgba(9,10,19,0.55)_52%,rgba(9,10,19,0.88)_68%,rgba(9,10,19,1)_100%)] opacity-80 sm:opacity-0 lg:hidden" />
+      <div aria-hidden className="absolute bottom-0 right-0 h-[22rem] w-[22rem] rounded-full bg-[radial-gradient(circle,rgba(255,149,72,0.14)_0%,rgba(255,149,72,0.04)_34%,transparent_70%)] blur-[48px] sm:hidden" />
+      <Container className="relative z-10 grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal className="space-y-10">
           <header className="max-w-3xl space-y-8">
             <p className="mystic-badge">
